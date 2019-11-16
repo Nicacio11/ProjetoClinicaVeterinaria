@@ -1,0 +1,4 @@
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\bin\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\bin\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.pdb
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\obj\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\obj\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.pdb

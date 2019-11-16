@@ -267,13 +267,13 @@
       <Project>{5C604D05-CB0A-4046-A814-951B34D2930D}</Project>
       <Name>Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Nicacio.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj">
+      <Project>{3d369f95-97d2-42f4-97ef-4d091f75933d}</Project>
+      <Name>Nicacio.ClinicaVeterinaria.Repositorio.Comum</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Nicacio.ClinicaVeterinaria.Repositorio.EF\Nicacio.ClinicaVeterinaria.Repositorio.EF.csproj">
       <Project>{42364450-d43a-4944-8830-d53fe554aa51}</Project>
       <Name>Nicacio.ClinicaVeterinaria.Repositorio.EF</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj">
-      <Project>{3D369F95-97D2-42F4-97EF-4D091F75933D}</Project>
-      <Name>Nicacio.ClinicaVeterinaria.Repositorio.Comum</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

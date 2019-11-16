@@ -11,3 +11,16 @@ C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinari
 C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.csproj.CopyComplete
 C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.dll
 C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.pdb
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.dll.config
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.dll
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.pdb
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\EntityFramework.dll
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.dll
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum.pdb
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\EntityFramework.xml
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.csprojAssemblyReference.cache
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.csproj.CopyComplete
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.dll
+C:\Users\vitor\source\repos\Projetc\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.pdb

@@ -55,14 +55,14 @@
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj">
-      <Project>{3D369F95-97D2-42F4-97EF-4D091F75933D}</Project>
-      <Name>Nicacio.ClinicaVeterinaria.Repositorio.Comum</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nicacio.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj">
+      <Project>{3d369f95-97d2-42f4-97ef-4d091f75933d}</Project>
+      <Name>Nicacio.ClinicaVeterinaria.Repositorio.Comum</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

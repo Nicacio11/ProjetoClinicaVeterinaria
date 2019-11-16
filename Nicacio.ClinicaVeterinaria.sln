@@ -17,11 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nicacio.ClinicaVeterinaria.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositorio", "Repositorio", "{5553C1F8-B13D-49EB-9B6A-3F72839B3013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nicacio.ClinicaVeterinaria.Repositorio.Comum", "Nicacio.Musicas.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj", "{3D369F95-97D2-42F4-97EF-4D091F75933D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF", "Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF\Nicacio.ClinicaVeterinaria.Repositorio.Comum.EF.csproj", "{5C604D05-CB0A-4046-A814-951B34D2930D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nicacio.ClinicaVeterinaria.Repositorio.EF", "Nicacio.ClinicaVeterinaria.Repositorio.EF\Nicacio.ClinicaVeterinaria.Repositorio.EF.csproj", "{42364450-D43A-4944-8830-D53FE554AA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nicacio.ClinicaVeterinaria.Repositorio.Comum", "Nicacio.ClinicaVeterinaria.Repositorio.Comum\Nicacio.ClinicaVeterinaria.Repositorio.Comum.csproj", "{3D369F95-97D2-42F4-97EF-4D091F75933D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{F3889F50-C7B3-4ABA-A65B-D3D7B430ED8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3889F50-C7B3-4ABA-A65B-D3D7B430ED8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3889F50-C7B3-4ABA-A65B-D3D7B430ED8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C604D05-CB0A-4046-A814-951B34D2930D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C604D05-CB0A-4046-A814-951B34D2930D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C604D05-CB0A-4046-A814-951B34D2930D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{42364450-D43A-4944-8830-D53FE554AA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42364450-D43A-4944-8830-D53FE554AA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42364450-D43A-4944-8830-D53FE554AA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D369F95-97D2-42F4-97EF-4D091F75933D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,9 +65,9 @@ Global
 		{9BA867BC-ADF0-4A8F-AE8F-4E8B618768CF} = {D841246B-416B-442E-8A26-6CF5B2E5F5F0}
 		{3207BB81-ECD8-4D30-8DE6-563E23002308} = {7651AED8-F503-45FB-B49A-BE88EDA11381}
 		{F3889F50-C7B3-4ABA-A65B-D3D7B430ED8A} = {7651AED8-F503-45FB-B49A-BE88EDA11381}
-		{3D369F95-97D2-42F4-97EF-4D091F75933D} = {5553C1F8-B13D-49EB-9B6A-3F72839B3013}
 		{5C604D05-CB0A-4046-A814-951B34D2930D} = {5553C1F8-B13D-49EB-9B6A-3F72839B3013}
 		{42364450-D43A-4944-8830-D53FE554AA51} = {5553C1F8-B13D-49EB-9B6A-3F72839B3013}
+		{3D369F95-97D2-42F4-97EF-4D091F75933D} = {5553C1F8-B13D-49EB-9B6A-3F72839B3013}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EE69B69-4BA7-4C20-BF3E-B1CB26DC90B9}
