@@ -1,0 +1,42 @@
+﻿@model Nicacio.ClinicaVeterinaria.Web.ViewModels.Animal.AnimalViewModel
+
+@{
+	ViewBag.Title = "Details";
+}
+	<div class="container">
+
+		<h4>Animal</h4>
+		<div>
+			<hr />
+			<dl class="dl-horizontal">
+				<dt>
+					@Html.DisplayNameFor(model => model.Nome)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => model.Nome)
+				</dd>
+
+				<dt>
+					@Html.DisplayNameFor(model => model.Raca)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => model.Raca)
+				</dd>
+
+				<dt>
+					@Html.DisplayNameFor(model => model.NomeDono)
+				</dt>
+
+				<dd>
+					@Html.DisplayFor(model => model.NomeDono)
+				</dd>
+
+			</dl>
+		</div>
+		<p>
+			@Html.ActionLink("Editar", "Edit", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-default" }) |
+			@Html.ActionLink("Voltar", "Index")
+		</p>
+	</div>

@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Nicacio.ClinicaVeterinaria.Web.ViewModels.Animal.AnimalViewModel>
+
+@{
+	ViewBag.Title = "Index";
+}
+<div class="container">
+
+
+	<h2>Animais</h2>
+
+	<p>
+	</p>
+	<div class="row">
+		<div class="col-md-6 col-lg-6 col-sm">
+			@Html.ActionLink("Cadastrar Animal", "CadastrarAnimal", null, htmlAttributes: new { @class = "btn btn-default" })
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-6">
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-lg-10">
+					<input type="text" placeholder="Pesquisar nome do animal" id="pesquisaAnimal" class="form-control" />
+				</div>
+				<div class="col-md-2 col-sm-2 col-lg-2">
+					<button id="btnPesquisar" class="btn btn-default">Pesquisar</button>
+				</div>
+
+			</div>
+		</div>
+		<br />
+		<br />
+	</div>
+	<table class="table" id="tblAnimal">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Nome)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Raca)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.NomeDono)
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Nome)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Raca)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.NomeDono)
+					</td>
+					<td>
+						@Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+						@Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
+						@Html.ActionLink("Apagar", "Delete", new { id = item.Id })
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+@section Scripts{
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btnPesquisar").click(function () {
+				var termoPesquisa = $("#pesquisaAnimal").val();
+				$.ajax(
+					{
+						method: "GET",
+						//url: "/Animal/FiltrarNome?pesquisa=" + termoPesquisa,
+						url: "/Animal/FiltrarAnimal/" + termoPesquisa,
+						success: function (data) {
+							console.log(data)
+							$("#tblAnimal tbody > tr").remove();
+							$.each(data, function (index, animal) {
+								$("#tblAnimal tbody").append(
+									"<tr>" +
+									"<td>" + animal.Nome + "</td>" +
+									"<td>" + animal.Raca + "</td>" +
+									"<td>" + animal.NomeDono + "</td>" +
+									"<td>" +
+									"<a href='/Animal/Edit/" + animal.Id + "'>Editar" + "</a> | " +
+									"<a href='/Animal/Details/" + animal.Id + "'>Detalhes" + "</a> | " +
+									"<a href='/Animal/Delete/" + animal.Id + "'>Apagar</a>" +
+									"</td>" +
+									"</tr>"
+								);
+							})
+
+						}
+					});
+			});
+		});
+	</script>
+}

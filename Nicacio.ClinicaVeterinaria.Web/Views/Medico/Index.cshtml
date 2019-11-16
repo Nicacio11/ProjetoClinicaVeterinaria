@@ -1,0 +1,100 @@
+﻿@model IEnumerable<Nicacio.ClinicaVeterinaria.Web.ViewModels.Medico.MedicoViewModel>
+
+@{
+	ViewBag.Title = "Index";
+}
+
+<div class="container">
+
+	<h2>Médicos</h2>
+
+	<div class="row">
+		<div class="col-md-6 col-lg-6 col-sm">
+			@Html.ActionLink("Cadastrar Medico", "Create", null, htmlAttributes: new { @class = "btn btn-default" })
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-6">
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-lg-10">
+					<input type="text" placeholder="Pesquisar nome do Medico" id="pesquisaMedico" class="form-control" />
+				</div>
+				<div class="col-md-2 col-sm-2 col-lg-2">
+					<button id="btnPesquisar" class="btn btn-default">Pesquisar</button>
+				</div>
+
+			</div>
+		</div>
+		<br />
+		<br />
+	</div>
+	<table class="table" id="tblMedico">
+		<thead>
+
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Nome)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Especialidade)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.NumeroConselhoRegionalVeterinaria)
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Nome)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Especialidade)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.NumeroConselhoRegionalVeterinaria)
+					</td>
+					<td>
+						@Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+						@Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
+						@Html.ActionLink("Apagar", "Delete", new { id = item.Id })
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
+@section Scripts{
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btnPesquisar").click(function () {
+				var termoPesquisa = $("#pesquisaMedico").val();
+				$.ajax(
+					{
+						method: "GET",
+						url: "/Medico/FiltrarMedico/" + termoPesquisa,
+						success: function (data) {
+							console.log(data)
+							$("#tblMedico tbody > tr").remove();
+							$.each(data, function (index, medico) {
+								$("#tblMedico tbody").append(
+									"<tr>" +
+									"<td>" + medico.Nome + "</td>" +
+									"<td>" + medico.Especialidade + "</td>" +
+									"<td>" + medico.NRCV + "</td>" +
+									"<td>" +
+									"<a href='/Animal/Edit/" + medico.Id + "'>Editar" + "</a> | " +
+									"<a href='/Animal/Details/" + medico.Id + "'>Detalhes" + "</a> | " +
+									"<a href='/Animal/Delete/" + medico.Id + "'>Apagar</a>" +
+									"</td>" +
+									"</tr>"
+								);
+							})
+
+						}
+					});
+			});
+		});
+	</script>
+}

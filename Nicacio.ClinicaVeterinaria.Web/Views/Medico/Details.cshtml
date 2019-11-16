@@ -1,0 +1,42 @@
+﻿@model Nicacio.ClinicaVeterinaria.Web.ViewModels.Medico.MedicoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container">
+
+<div>
+    <h4>Médico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Especialidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especialidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroConselhoRegionalVeterinaria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroConselhoRegionalVeterinaria)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>
+</div>

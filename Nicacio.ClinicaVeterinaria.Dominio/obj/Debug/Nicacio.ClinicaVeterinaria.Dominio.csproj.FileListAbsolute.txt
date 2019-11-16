@@ -1,0 +1,4 @@
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Dominio\bin\Debug\Nicacio.ClinicaVeterinaria.Dominio.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Dominio\bin\Debug\Nicacio.ClinicaVeterinaria.Dominio.pdb
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Dominio\obj\Debug\Nicacio.ClinicaVeterinaria.Dominio.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Dominio\obj\Debug\Nicacio.ClinicaVeterinaria.Dominio.pdb

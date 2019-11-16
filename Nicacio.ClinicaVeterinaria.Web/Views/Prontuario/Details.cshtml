@@ -1,0 +1,52 @@
+﻿@model Nicacio.ClinicaVeterinaria.Web.ViewModels.Prontuario.ProntuarioExibicaoViewModel
+
+@{
+	ViewBag.Title = "Detalhes";
+}
+
+<div class="container">
+
+	<div class="container">
+		<h4>Prontuario</h4>
+		<hr />
+		<dl class="dl-horizontal">
+			<dt>
+				@Html.DisplayNameFor(model => model.MedicoNome)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.MedicoNome)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.AnimalNome)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.AnimalNome)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.DataAtendimento)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.DataAtendimento)
+			</dd>
+
+			<dt>
+				@Html.DisplayNameFor(model => model.Observacao)
+			</dt>
+
+			<dd>
+				@Html.DisplayFor(model => model.Observacao)
+			</dd>
+
+		</dl>
+	</div>
+	<p>
+		@Html.ActionLink("Editar", "Edit", new { id = Model.Id }, htmlAttributes: new { @class = "btn btn-default" }) |
+		@Html.ActionLink("Voltar", "Index", null, htmlAttributes: new { @class = "btn btn-default" })
+	</p>
+
+</div>

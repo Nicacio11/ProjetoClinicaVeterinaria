@@ -1,0 +1,45 @@
+﻿<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		@Html.ActionLink("Nicácio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+	</div>
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li>@Html.ActionLink("Pagina Inicial", "Index", "Home")</li>
+			<li>@Html.ActionLink("Sobre", "About", "Home")</li>
+			<li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+			@if (Request.IsAuthenticated)
+			{
+				<li>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							@if (User.IsInRole("Membro"))
+							{
+								<li>@Html.ActionLink("Medicos", "Index", "Medico")</li>
+								<li>@Html.ActionLink("Animais", "Index", "Animal")</li>
+								<li>@Html.ActionLink("Prontuario", "Index", "Prontuario")</li>
+							}
+							<li role="separator" class="divider"></li>
+							<li>@Html.ActionLink("Sair", "Logout", "Usuario")</li>
+						</ul>
+					</div>
+				</li>
+
+			}
+			else
+			{
+				<li>@Html.ActionLink("Login", "Login", "Usuario")</li>
+				<!-- Exemplo de único botão danger -->
+
+			}
+		</ul>
+
+	</div>

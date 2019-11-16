@@ -1,0 +1,11 @@
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Comum.EF.dll.config
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Comum.EF.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\Nicacio.ClinicaVeterinaria.Comum.EF.pdb
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\EntityFramework.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\EntityFramework.xml
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.AcessoDados.Comum.EF.csprojAssemblyReference.cache
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.AcessoDados.Comum.EF.csproj.CopyComplete
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Comum.EF.dll
+C:\Users\vitor\source\repos\Nicacio.ClinicaVeterinaria\Nicacio.ClinicaVeterinaria.Comum.EF\obj\Debug\Nicacio.ClinicaVeterinaria.Comum.EF.pdb

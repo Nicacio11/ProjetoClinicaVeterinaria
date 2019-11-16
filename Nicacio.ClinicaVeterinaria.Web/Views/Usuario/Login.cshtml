@@ -1,0 +1,63 @@
+﻿@model Nicacio.ClinicaVeterinaria.Web.ViewModels.Usuario.UsuarioViewModel
+
+@{
+	ViewBag.Title = "Login";
+}
+
+
+<div class="container">
+
+
+
+
+	@using (Html.BeginForm())
+	{
+		@Html.AntiForgeryToken()
+
+
+		<div class="form-horizontal">
+			<hr />
+			<div class="bg-linear-new p-4 rounded">
+				<div class="text-center">
+					<h2>Login</h2>
+				</div>
+				<div style="margin:auto; max-width:400px;margin-top:100px;margin-bottom:200px;height:60px">
+
+					@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+					<div class="form-group">
+						@Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+						<div class="col-md-10">
+							@Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", Placeholder = "Email" } })
+							@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+						</div>
+					</div>
+
+					<div class="form-group">
+						@Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label col-md-2" })
+						<div class="col-md-10">
+							@Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control", Placeholder = "Senha" } })
+							@Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+							@Html.ValidationMessage("erro_identity", new { @class = "text-danger" })
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-offset-2 col-md-10">
+							<input style="float:left;" type="submit" value="Entrar" class="btn btn-default" />
+							<div class="text-right">
+								@Html.ActionLink("Criar Usuario", "CriarUsuario", "Usuario")
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	}
+
+
+
+</div>
+@section Scripts {
+	@Scripts.Render("~/bundles/jqueryval")
+}

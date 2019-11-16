@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Nicacio.ClinicaVeterinaria.Web.ViewModels.Prontuario.ProntuarioExibicaoViewModel>
+
+@{
+	ViewBag.Title = "Index";
+}
+
+<div class="container">
+
+	<h2>Prontuários</h2>
+
+	<div class="row">
+		<div class="col-md-6 col-lg-6 col-sm">
+			@Html.ActionLink("Cadastrar Prontuario", "Create", null, htmlAttributes: new { @class = "btn btn-default" })
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-6">
+			<div class="row">
+				<div class="col-md-10 col-sm-10 col-lg-10">
+					<input type="date" placeholder="Pesquisar por data" id="pesquisaProntuario" class="form-control" />
+				</div>
+				<div class="col-md-2 col-sm-2 col-lg-2">
+					<button id="btnPesquisar" class="btn btn-default">Pesquisar</button>
+				</div>
+
+			</div>
+		</div>
+		<br />
+		<br /><br />
+		<br />
+	</div>
+	<table class="table" id="tblProntuario">
+		<thead>
+
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.MedicoNome)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.AnimalNome)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.DataAtendimento)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Observacao)
+				</th>
+				<th></th>
+			</tr>
+
+		</thead>
+		<tbody>
+
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.MedicoNome)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.AnimalNome)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.DataAtendimento)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Observacao)
+					</td>
+					<td>
+						@Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+						@Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
+						@Html.ActionLink("Apagar", "Delete", new { id = item.Id })
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+</div>
+@section Scripts{
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btnPesquisar").click(function () {
+				var termoPesquisa = $("#pesquisaProntuario").val();
+				$.ajax(
+					{
+						method: "GET",
+						url: "/Prontuario/FiltrarProntuario/" + termoPesquisa,
+						success: function (data) {
+							$("#tblProntuario tbody > tr").remove();
+							$.each(data, function (index, prontuario) {
+								$("#tblProntuario tbody").append(
+									"<tr>" +
+									"<td>" + prontuario.NomeMedico + "</td>" +
+									"<td>" + prontuario.NomeAnimal + "</td>" +
+									"<td>" + prontuario.DataAtendimento + "</td>" +
+									"<td>" + prontuario.Observacao + "</td>" +
+									"<td>" +
+									"<a href='/Animal/Edit/" + prontuario.Id + "'>Editar" + "</a> | " +
+									"<a href='/Animal/Details/" + prontuario.Id + "'>Detalhes" + "</a> | " +
+									"<a href='/Animal/Delete/" + prontuario.Id + "'>Apagar</a>" +
+									"</td>" +
+									"</tr>"
+								);
+							})
+
+						}
+					});
+			});
+		});
+	</script>
+}
